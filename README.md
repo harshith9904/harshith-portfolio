@@ -21,7 +21,7 @@ https://harshithram.netlify.app (Netlify project `harshithram`, admin: https://a
 To publish changes, run from this folder:
 
 ```bash
-npx netlify-cli deploy --prod --dir . --site harshithram
+npx netlify-cli deploy --prod --no-build --dir . --site 9aeabdff-a595-4427-86c5-043d30ea6b95
 ```
 
 Or drag this folder onto the project's Deploys page in Netlify.
