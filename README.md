@@ -14,29 +14,17 @@ site/
     └── apple-touch-icon.png
 ```
 
-## Publish it (pick one)
+## Live site
 
-**Netlify Drop (easiest, no account setup beyond sign-in)**
-1. Go to https://app.netlify.com/drop
-2. Drag this whole `site` folder onto the page.
-3. You get a live link like `https://something.netlify.app`. Rename it under Site settings.
+https://harshithram.netlify.app (Netlify project `harshithram`, admin: https://app.netlify.com/projects/harshithram)
 
-**Vercel**
+To publish changes, run from this folder:
+
 ```bash
-npx vercel deploy --prod
+npx netlify-cli deploy --prod --dir . --site harshithram
 ```
-Run from inside `site/`.
 
-**GitHub Pages**
-Push the contents of `site/` to a repo named `<your-username>.github.io`, then enable Pages in the repo settings.
-
-## After it's live
-
-Link previews on LinkedIn and WhatsApp need full URLs. In `index.html`, replace these
-with your real address (example uses `https://harshithram.netlify.app`):
-
-- `og:image` and `twitter:image` → `https://harshithram.netlify.app/assets/og.jpg`
-- `og:url` → `https://harshithram.netlify.app/`
+Or drag this folder onto the project's Deploys page in Netlify.
 
 ## Editing content
 
