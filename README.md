@@ -16,7 +16,7 @@ site/
 
 ## Live site
 
-https://harshithram.netlify.app (Netlify project `harshithram`, admin: https://app.netlify.com/projects/harshithram)
+https://harshithram.com (also https://harshithram.netlify.app; Netlify project `harshithram`, admin: https://app.netlify.com/projects/harshithram)
 
 Publishing is automatic: every push to `main` on GitHub
 (https://github.com/harshith9904/harshith-portfolio) deploys to Netlify within about a minute.
