@@ -18,13 +18,13 @@ site/
 
 https://harshithram.netlify.app (Netlify project `harshithram`, admin: https://app.netlify.com/projects/harshithram)
 
-To publish changes, run from this folder:
+Publishing is automatic: every push to `main` on GitHub
+(https://github.com/harshith9904/harshith-portfolio) deploys to Netlify within about a minute.
+Settings live in `netlify.toml` (no build step; the repo root is published as-is).
 
 ```bash
-npx netlify-cli deploy --prod --no-build --dir . --site 9aeabdff-a595-4427-86c5-043d30ea6b95
+git add -A && git commit -m "Update portfolio" && git push
 ```
-
-Or drag this folder onto the project's Deploys page in Netlify.
 
 ## Editing content
 
