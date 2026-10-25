@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harshith Ram — Automation Engineer</title>
+<meta name="description" content="B Harshith Ram — RPA Developer & UiPath specialist building AI-driven, scalable automation at Aptiva Technologies, Hyderabad.">
+<meta name="author" content="B Harshith Ram">
+<meta name="theme-color" content="#050505">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<!-- Social previews. After deploying, replace og:image / og:url with absolute URLs (e.g. https://yourdomain.com/assets/og.jpg) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Harshith Ram — Automation Engineer">
+<meta property="og:description" content="RPA Developer & UiPath specialist building AI-driven, scalable automation.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Harshith Ram — Automation Engineer">
+<meta name="twitter:description" content="RPA Developer & UiPath specialist building AI-driven, scalable automation.">
+<meta name="twitter:image" content="assets/og.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"B Harshith Ram","jobTitle":"Automation Engineer","worksFor":{"@type":"Organization","name":"Aptiva Technologies"},"address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},"email":"mailto:ram.h@aptivacorp.ae","telephone":["+919000998111","+919398758248"],"sameAs":["https://www.linkedin.com/in/b-harshith-ram-75832a217"],"knowsAbout":["UiPath","Robotic Process Automation","Intelligent Document Processing","Workflow Automation","AI Automation"],"alumniOf":"VNR Vignana Jyothi Institute of Engineering and Technology"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/harshith.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#050505; --fg:#ededed; --muted:#7c7c84; --line:#1d1d22;
+    --acid:#c6ff3d; --acid-dim:#c6ff3d22;
+    --mono:'JetBrains Mono',monospace; --sans:'Space Grotesk',sans-serif;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:auto; }
+  body { background:var(--bg); color:var(--fg); font-family:var(--sans); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+  body.loading { overflow:hidden; }
+  ::selection { background:var(--acid); color:#000; }
+  a { color:inherit; text-decoration:none; }
+  .mono { font-family:var(--mono); }
+
+  /* grain + scanlines */
+  body::after { content:''; position:fixed; inset:0; pointer-events:none; z-index:90; opacity:.06;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+  /* loader */
+  #loader { position:fixed; inset:0; z-index:100; background:#000; display:flex; flex-direction:column; justify-content:space-between; padding:24px; }
+  #loader .top, #loader .bot { display:flex; justify-content:space-between; font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; }
+  #loader .ld-count { font-size:clamp(80px,22vw,280px); font-weight:700; letter-spacing:-.05em; line-height:.8; color:var(--acid); }
+  #loader .bar { height:2px; background:var(--line); margin-top:16px; }
+  #loader .bar i { display:block; height:100%; width:0; background:var(--acid); }
+
+  /* cursor */
+  .cursor, .cursor-dot { position:fixed; top:0; left:0; pointer-events:none; z-index:95; border-radius:50%; transform:translate(-50%,-50%); }
+  .cursor { width:40px; height:40px; border:1px solid var(--acid); transition:width .3s, height .3s, background .3s; mix-blend-mode:difference; }
+  .cursor.hover { width:80px; height:80px; background:var(--acid); }
+  .cursor-dot { width:5px; height:5px; background:var(--acid); }
+  @media (hover:none) { .cursor, .cursor-dot { display:none; } }
+
+  /* nav */
+  nav { position:fixed; top:0; left:0; right:0; z-index:50; display:flex; justify-content:space-between; align-items:center; padding:20px clamp(16px,4vw,48px); mix-blend-mode:difference; }
+  .logo { font-weight:700; font-size:22px; letter-spacing:-.04em; }
+  .logo span { color:var(--acid); }
+  nav ul { display:flex; gap:28px; list-style:none; font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.1em; }
+  nav ul a { position:relative; }
+  nav ul a::after { content:''; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:var(--acid); transition:width .3s; }
+  nav ul a:hover::after { width:100%; }
+  .status { display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; }
+  .status i { width:8px; height:8px; border-radius:50%; background:var(--acid); box-shadow:0 0 12px var(--acid); animation:pulse 1.6s infinite; }
+  @keyframes pulse { 50% { opacity:.3; } }
+  @media (max-width:760px) { nav ul { display:none; } }
+
+  /* hero */
+  #gl { position:fixed; inset:0; z-index:0; pointer-events:none; }
+  section { position:relative; z-index:2; }
+  .hero { min-height:100vh; min-height:100svh; display:grid; grid-template-columns:1.4fr 1fr; align-items:end; gap:40px; padding:120px clamp(16px,4vw,48px) 48px; }
+  .hero-meta { font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; display:flex; gap:24px; flex-wrap:wrap; margin-bottom:24px; }
+  .hero-meta b { color:var(--acid); font-weight:400; }
+  .hero h1 { font-size:clamp(56px,11vw,180px); font-weight:700; line-height:.85; letter-spacing:-.06em; text-transform:uppercase; }
+  .hero h1 .line { display:block; overflow:hidden; }
+  .hero h1 .line span { display:inline-block; transform:translateY(110%); }
+  .hero h1 .outline { color:transparent; -webkit-text-stroke:1.5px var(--fg); }
+  .hero h1 .acid { color:var(--acid); }
+  .hero .sub { margin-top:28px; max-width:520px; font-size:18px; line-height:1.5; color:#bdbdc4; }
+  .hero .sub b { color:var(--fg); font-weight:500; }
+
+  .portrait { position:relative; justify-self:end; width:min(100%,400px); aspect-ratio:3/4; clip-path:inset(100% 0 0 0); }
+  .portrait img { width:100%; height:100%; object-fit:cover; object-position:50% 35%; filter:grayscale(1) contrast(1.15) brightness(.9); transform:scale(1.2); }
+  .portrait::before { content:''; position:absolute; inset:0; z-index:2; background:var(--acid); mix-blend-mode:multiply; opacity:.55; transition:opacity .6s; }
+  .portrait:hover::before { opacity:0; }
+  .portrait:hover img { filter:grayscale(0) contrast(1.05); }
+  .portrait::after { content:''; position:absolute; inset:0; z-index:3; background:repeating-linear-gradient(0deg, transparent 0 2px, #0006 2px 3px); pointer-events:none; }
+  .portrait .tag { position:absolute; z-index:4; left:12px; bottom:12px; font-family:var(--mono); font-size:11px; background:#000; color:var(--acid); padding:6px 10px; }
+  .portrait .corner { position:absolute; z-index:4; width:18px; height:18px; border:2px solid var(--acid); }
+  .portrait .c-tl { top:-8px; left:-8px; border-right:0; border-bottom:0; }
+  .portrait .c-br { bottom:-8px; right:-8px; border-left:0; border-top:0; }
+  @media (max-width:900px) { .hero { grid-template-columns:1fr; } .portrait { justify-self:start; width:min(100%,320px); } }
+
+  .scroll-hint { position:absolute; right:clamp(16px,4vw,48px); bottom:24px; font-family:var(--mono); font-size:11px; color:var(--muted); writing-mode:vertical-rl; letter-spacing:.2em; }
+  @media (max-width:900px) { .scroll-hint { display:none; } }
+
+  /* marquee */
+  .marquee { border-block:1px solid var(--line); background:var(--acid); color:#000; overflow:hidden; padding:18px 0; transform:rotate(-2deg) scale(1.05); margin:60px 0; }
+  .marquee .track { display:flex; gap:48px; white-space:nowrap; width:max-content; animation:marq 28s linear infinite; font-size:clamp(28px,4vw,52px); font-weight:700; text-transform:uppercase; letter-spacing:-.03em; }
+  .marquee .track span::after { content:'✦'; margin-left:48px; }
+  @keyframes marq { to { transform:translateX(-50%); } }
+
+  .wrap { padding:120px clamp(16px,4vw,48px); }
+  .label { font-family:var(--mono); font-size:12px; color:var(--acid); text-transform:uppercase; letter-spacing:.15em; display:flex; align-items:center; gap:12px; margin-bottom:40px; }
+  .label::before { content:''; width:32px; height:1px; background:var(--acid); }
+
+  /* about */
+  .about-text { font-size:clamp(26px,3.6vw,54px); line-height:1.15; letter-spacing:-.02em; font-weight:500; max-width:1200px; }
+  .about-text .w { opacity:.12; transition:opacity .2s; }
+  .about-text em { font-style:normal; color:var(--acid); }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); margin-top:80px; }
+  .stat { padding:32px 24px 0 0; border-right:1px solid var(--line); }
+  .stat:last-child { border-right:0; }
+  .stat .n { font-size:clamp(48px,6vw,96px); font-weight:700; letter-spacing:-.05em; line-height:1; }
+  .stat .n sup { color:var(--acid); font-size:.45em; }
+  .stat p { font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; margin-top:8px; letter-spacing:.08em; }
+  @media (max-width:760px) { .stats { grid-template-columns:1fr 1fr; } .stat:nth-child(2) { border-right:0; } }
+
+  /* pipeline */
+  .pipe-head { display:flex; justify-content:space-between; align-items:end; gap:24px; flex-wrap:wrap; margin-bottom:56px; }
+  .h2 { font-size:clamp(40px,6vw,96px); font-weight:700; letter-spacing:-.05em; line-height:.9; text-transform:uppercase; }
+  .h2 .outline { color:transparent; -webkit-text-stroke:1.2px var(--fg); }
+  .pipe-head p { max-width:380px; color:var(--muted); line-height:1.6; }
+  .pipeline { position:relative; display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+  .pipeline svg { position:absolute; top:44px; left:0; width:100%; height:4px; overflow:visible; }
+  .node { position:relative; border:1px solid var(--line); background:#0a0a0c; padding:24px 20px; min-height:240px; transition:border-color .3s, transform .4s; }
+  .node:hover { border-color:var(--acid); transform:translateY(-6px); }
+  .node .ic { width:40px; height:40px; border:1px solid var(--acid); display:grid; place-items:center; font-family:var(--mono); color:var(--acid); font-size:13px; background:#050505; position:relative; z-index:2; }
+  .node.active .ic { background:var(--acid); color:#000; box-shadow:0 0 30px var(--acid); }
+  .node h3 { margin:28px 0 10px; font-size:22px; letter-spacing:-.02em; }
+  .node p { font-size:14px; line-height:1.55; color:var(--muted); }
+  .node .log { margin-top:16px; font-family:var(--mono); font-size:11px; color:var(--acid); opacity:0; transition:opacity .3s; }
+  .node.active .log { opacity:1; }
+  @media (max-width:1000px) { .pipeline { grid-template-columns:1fr 1fr; } .pipeline svg { display:none; } }
+  @media (max-width:560px) { .pipeline { grid-template-columns:1fr; } .node { min-height:auto; } }
+
+  /* capabilities */
+  .caps { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
+  .cap { position:relative; padding:36px 28px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; min-height:220px; }
+  .cap::before { content:''; position:absolute; inset:0; background:radial-gradient(300px circle at var(--x,50%) var(--y,50%), var(--acid-dim), transparent 60%); opacity:0; transition:opacity .3s; }
+  .cap:hover::before { opacity:1; }
+  .cap .idx { font-family:var(--mono); font-size:12px; color:var(--muted); }
+  .cap h3 { font-size:26px; letter-spacing:-.03em; margin:40px 0 10px; position:relative; }
+  .cap p { color:var(--muted); line-height:1.55; font-size:15px; position:relative; }
+  @media (max-width:900px) { .caps { grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px) { .caps { grid-template-columns:1fr; } }
+
+  /* horizontal timeline */
+  .hz { height:100vh; height:100svh; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
+  .hz .label { padding-left:clamp(16px,4vw,48px); }
+  .hz-track { display:flex; gap:32px; padding-left:clamp(16px,4vw,48px); width:max-content; }
+  .slab { width:min(78vw,560px); flex:0 0 auto; border:1px solid var(--line); padding:36px; background:#08080a; position:relative; }
+  .slab .yr { font-size:clamp(64px,9vw,140px); font-weight:700; letter-spacing:-.06em; line-height:.85; color:transparent; -webkit-text-stroke:1.2px #444; }
+  .slab.now .yr { -webkit-text-stroke-color:var(--acid); }
+  .slab h3 { font-size:28px; margin:28px 0 6px; letter-spacing:-.02em; }
+  .slab .org { font-family:var(--mono); font-size:13px; color:var(--acid); }
+  .slab p { color:var(--muted); line-height:1.6; margin-top:16px; }
+  .slab .pill { position:absolute; top:24px; right:24px; font-family:var(--mono); font-size:11px; padding:6px 10px; border:1px solid var(--acid); color:var(--acid); text-transform:uppercase; }
+  .slab.intro { border:0; background:none; padding-left:0; display:flex; flex-direction:column; justify-content:center; }
+  @media (max-width:760px) {
+    .slab { padding:24px; width:84vw; }
+    .slab.intro { width:auto; padding-right:8px; }
+    .slab .pill { position:static; display:inline-block; margin-bottom:20px; }
+    .slab h3 { font-size:24px; margin-top:20px; }
+  }
+
+  /* education */
+  .edu { display:grid; gap:0; border-top:1px solid var(--line); }
+  .edu-row { display:grid; grid-template-columns:160px 1fr auto; gap:24px; padding:32px 0; border-bottom:1px solid var(--line); align-items:center; transition:padding .4s, background .4s; }
+  .edu-row:hover { padding-left:16px; background:linear-gradient(90deg,var(--acid-dim),transparent); }
+  .edu-row .when { font-family:var(--mono); color:var(--acid); font-size:13px; }
+  .edu-row h3 { font-size:clamp(20px,2.4vw,32px); letter-spacing:-.02em; }
+  .edu-row p { color:var(--muted); margin-top:4px; }
+  .edu-row .deg { font-family:var(--mono); font-size:12px; color:var(--muted); text-transform:uppercase; text-align:right; }
+  @media (max-width:760px) { .edu-row { grid-template-columns:1fr; gap:8px; } .edu-row .deg { text-align:left; } }
+
+  /* contact */
+  .contact { min-height:100vh; display:flex; flex-direction:column; justify-content:center; text-align:center; align-items:center; }
+  .contact h2 { font-size:clamp(56px,13vw,220px); font-weight:700; letter-spacing:-.07em; line-height:.82; text-transform:uppercase; }
+  .contact h2 .acid { color:var(--acid); }
+  .hello { position:relative; margin-top:56px; display:flex; flex-direction:column; align-items:center; }
+  .mag { display:inline-grid; place-items:center; width:180px; height:180px; border-radius:50%; border:0; cursor:pointer; background:var(--acid); color:#000; font-family:inherit; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:.02em; transition:transform .2s ease-out; }
+  .mag span { pointer-events:none; }
+  .hello-menu { position:absolute; z-index:10; top:calc(100% + 16px); left:50%; width:min(340px, calc(100vw - 32px)); background:#0a0a0c; border:1px solid var(--acid); text-align:left; opacity:0; visibility:hidden; transform:translate(-50%, -12px); transition:opacity .3s, transform .4s cubic-bezier(.2,.8,.2,1), visibility .3s; box-shadow:0 20px 60px -20px #c6ff3d55; }
+  .hello-menu.open { opacity:1; visibility:visible; transform:translate(-50%, 0); }
+  .hello-menu a { display:grid; grid-template-columns:40px 1fr auto; gap:14px; align-items:center; padding:16px 18px; border-bottom:1px solid var(--line); transition:background .25s, color .25s; }
+  .hello-menu a:last-child { border-bottom:0; }
+  .hello-menu a:hover, .hello-menu a:focus-visible { background:var(--acid); color:#000; outline:none; }
+  .hello-menu .ic { width:40px; height:40px; border:1px solid currentColor; display:grid; place-items:center; color:var(--acid); }
+  .hello-menu a:hover .ic, .hello-menu a:focus-visible .ic { color:#000; }
+  .hello-menu .ic svg { width:20px; height:20px; }
+  .hello-menu b { display:block; font-size:18px; letter-spacing:-.02em; }
+  .hello-menu small { font-family:var(--mono); font-size:12px; opacity:.7; }
+  .hello-menu .arr { font-size:18px; }
+  .contact .links { margin-top:48px; display:flex; gap:28px; flex-wrap:wrap; justify-content:center; font-family:var(--mono); font-size:14px; }
+  .contact .links a { border-bottom:1px solid var(--line); padding-bottom:4px; transition:color .3s, border-color .3s; }
+  .contact .links a:hover { color:var(--acid); border-color:var(--acid); }
+  footer { position:relative; z-index:2; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:24px clamp(16px,4vw,48px); border-top:1px solid var(--line); font-family:var(--mono); font-size:12px; color:var(--muted); }
+
+  .reveal { opacity:0; transform:translateY(40px); }
+
+  /* a11y */
+  :focus-visible { outline:2px solid var(--acid); outline-offset:4px; }
+  .skip { position:fixed; top:-60px; left:16px; z-index:200; background:var(--acid); color:#000; padding:10px 16px; font-family:var(--mono); font-size:13px; transition:top .2s; }
+  .skip:focus { top:16px; }
+
+  /* mobile menu */
+  .menu-btn { display:none; background:none; border:0; color:var(--fg); font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.12em; cursor:pointer; padding:8px 0; }
+  .menu { position:fixed; inset:0; z-index:60; background:#000; display:flex; flex-direction:column; justify-content:center; padding:0 24px; clip-path:inset(0 0 100% 0); transition:clip-path .7s cubic-bezier(.7,0,.2,1); visibility:hidden; }
+  .menu.open { clip-path:inset(0 0 0 0); visibility:visible; }
+  .menu a { font-size:clamp(44px,13vw,72px); font-weight:700; text-transform:uppercase; letter-spacing:-.05em; line-height:1.05; display:flex; gap:14px; align-items:baseline; }
+  .menu a small { font-family:var(--mono); font-size:12px; color:var(--acid); letter-spacing:0; }
+  .menu a:active { color:var(--acid); }
+  .menu .close { position:absolute; top:22px; right:16px; }
+  .menu .meta { position:absolute; bottom:24px; left:24px; right:24px; font-family:var(--mono); font-size:12px; color:var(--muted); display:flex; justify-content:space-between; }
+  @media (max-width:760px) { .menu-btn { display:block; } .status { display:none; } }
+
+  .portrait.decrypt::before { opacity:0; }
+  .portrait.decrypt img { filter:grayscale(0) contrast(1.05); }
+
+  /* static mode: reduced motion or animation libraries failed to load */
+  .static #loader, .static .cursor, .static .cursor-dot { display:none; }
+  .static .hero h1 .line > span { transform:none; }
+  .static .portrait { clip-path:none; }
+  .static .portrait img { transform:none; }
+  .static .reveal, .static .about-text .w { opacity:1; transform:none; }
+  .static .hz { height:auto; padding:120px 0; }
+  .static .hz-track { flex-direction:column; width:auto; padding-right:clamp(16px,4vw,48px); }
+  .static .slab { width:auto; max-width:760px; }
+  @media (prefers-reduced-motion:reduce) { .marquee .track, .status i { animation:none; } }
+</style>
+</head>
+<body class="loading">
+<script>
+  // Decide motion mode before first paint so reduced-motion visitors never see the loader
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.classList.add('static'); document.body.classList.remove('loading'); }
+</script>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="loader" aria-hidden="true">
+  <div class="top"><span>HR.SYS / Boot sequence</span><span id="ld-msg">Initializing bots…</span></div>
+  <div>
+    <div class="ld-count"><span id="ld-n">000</span></div>
+    <div class="bar"><i id="ld-bar"></i></div>
+  </div>
+  <div class="bot"><span>Hyderabad, IN</span><span>UiPath · RPA · AI</span></div>
+</div>
+
+<div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<nav aria-label="Main">
+  <a href="#top" class="logo" aria-label="Harshith Ram, back to top">HR<span>.</span></a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#work">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="status" title="Local time in Hyderabad"><i></i><span id="clock">HYD --:--</span></div>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+</nav>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <button class="menu-btn close" id="menuClose">Close ✕</button>
+  <a href="#about"><small>01</small>About</a>
+  <a href="#process"><small>02</small>Process</a>
+  <a href="#work"><small>03</small>Experience</a>
+  <a href="#contact"><small>04</small>Contact</a>
+  <div class="meta"><span>Hyderabad, IN</span><span>ram.h@aptivacorp.ae</span></div>
+</div>
+
+<main id="main">
+<section class="hero" id="top">
+  <div>
+    <div class="hero-meta"><span><b>●</b> Automation Engineer</span><span>@ Aptiva Technologies</span><span>Hyderabad, India</span></div>
+    <h1>
+      <span class="line"><span class="scramble" data-text="Automate">Automate</span></span>
+      <span class="line"><span class="outline">the boring.</span></span>
+      <span class="line"><span class="acid">Scale</span> <span>the rest.</span></span>
+    </h1>
+    <p class="sub">I'm <b>B Harshith Ram</b>, an RPA developer and <b>UiPath specialist</b> with 3+ years of building enterprise-grade automation that brings together intelligent document processing, AI models and legacy systems.</p>
+  </div>
+  <div class="portrait">
+    <span class="corner c-tl"></span><span class="corner c-br"></span>
+    <img src="assets/harshith.jpg" alt="B Harshith Ram speaking with a microphone" width="720" height="1280" fetchpriority="high">
+    <span class="tag" id="ptag">ID://HARSHITH_RAM — hover to decrypt</span>
+  </div>
+  <span class="scroll-hint" aria-hidden="true">SCROLL ↓</span>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>UiPath</span><span>RPA</span><span>Intelligent Document Processing</span><span>AI Integration</span><span>Workflow Automation</span><span>Legacy Systems</span><span>Cost Optimization</span>
+  <span>UiPath</span><span>RPA</span><span>Intelligent Document Processing</span><span>AI Integration</span><span>Workflow Automation</span><span>Legacy Systems</span><span>Cost Optimization</span>
+</div></div>
+
+<section class="wrap" id="about">
+  <div class="label">01 / About</div>
+  <p class="about-text" id="aboutText">RPA developer with <em>3+ years</em> delivering enterprise-grade, <em>scalable automation</em> in product-focused environments. I build robust, reusable, high-performance bots that bring together <em>intelligent document processing</em>, AI models and legacy systems, so teams save time and cost on work nobody should do by hand.</p>
+  <div class="stats">
+    <div class="stat"><div class="n"><span class="count" data-to="3">0</span><sup>+</sup></div><p>Years in automation</p></div>
+    <div class="stat"><div class="n"><span class="count" data-to="2">0</span></div><p>Roles at Aptiva</p></div>
+    <div class="stat"><div class="n">'23</div><p>Shipping bots since</p></div>
+    <div class="stat"><div class="n">24<sup>/7</sup></div><p>Bots don't sleep</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="process">
+  <div class="pipe-head">
+    <div><div class="label">02 / How a bot thinks</div><h2 class="h2">From inbox<br><span class="outline">to done.</span></h2></div>
+    <p>My automations follow a pipeline: capture messy input, understand it with IDP and AI, decide, act across modern and legacy systems, then report back.</p>
+  </div>
+  <div class="pipeline" id="pipeline">
+    <svg viewBox="0 0 1000 4" preserveAspectRatio="none"><line x1="20" y1="2" x2="980" y2="2" stroke="#1d1d22" stroke-width="2"/><line id="pipeFill" x1="20" y1="2" x2="20" y2="2" stroke="#c6ff3d" stroke-width="2"/></svg>
+    <div class="node"><div class="ic">01</div><h3>Capture</h3><p>Emails, PDFs, scans, portals and spreadsheets come in through a queue.</p><div class="log">&gt; 128 items queued</div></div>
+    <div class="node"><div class="ic">02</div><h3>Understand</h3><p>Intelligent document processing and AI models classify and extract fields.</p><div class="log">&gt; fields extracted ✓</div></div>
+    <div class="node"><div class="ic">03</div><h3>Decide</h3><p>Business rules, validations and exception routing, with a human in the loop where it matters.</p><div class="log">&gt; rules passed ✓</div></div>
+    <div class="node"><div class="ic">04</div><h3>Execute</h3><p>UiPath robots work across web apps, APIs and legacy desktop systems.</p><div class="log">&gt; posted to ERP ✓</div></div>
+    <div class="node"><div class="ic">05</div><h3>Report</h3><p>Logs, dashboards and alerts so every run can be audited.</p><div class="log">&gt; hours saved ↑</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="label">03 / Capabilities</div>
+  <div class="caps" id="caps">
+    <div class="cap"><span class="idx">/01</span><h3>UiPath Development</h3><p>Studio, REFramework, Orchestrator queues and attended and unattended robots, built for production.</p></div>
+    <div class="cap"><span class="idx">/02</span><h3>Intelligent Document Processing</h3><p>Turning invoices, forms and unstructured documents into clean, validated data.</p></div>
+    <div class="cap"><span class="idx">/03</span><h3>AI-Driven Automation</h3><p>Plugging AI models into workflows to handle judgment calls that rules alone can't.</p></div>
+    <div class="cap"><span class="idx">/04</span><h3>Legacy Integration</h3><p>Connecting older desktop and mainframe-style systems to modern pipelines without rewrites.</p></div>
+    <div class="cap"><span class="idx">/05</span><h3>Reusable Architecture</h3><p>Modular, high-performance components that scale across processes and teams.</p></div>
+    <div class="cap"><span class="idx">/06</span><h3>Cost &amp; Time Optimization</h3><p>Finding where hours leak and automating them away, with impact you can measure.</p></div>
+  </div>
+</section>
+
+<section class="hz" id="work">
+  <div class="label">04 / Experience</div>
+  <div class="hz-track" id="hzTrack">
+    <div class="slab intro"><h2 class="h2">3 yrs<br><span class="outline">10 mos</span><br>at Aptiva.</h2></div>
+    <div class="slab"><span class="pill">Jan 2023 — Jan 2024</span><div class="yr">2023</div><h3>Associate Automation Engineer</h3><div class="org">Aptiva Technologies · Hyderabad</div><p>Started building production RPA with UiPath and learned how real enterprise processes behave: the edge cases, exceptions and the systems behind them.</p></div>
+    <div class="slab now"><span class="pill">Jan 2024 — Present</span><div class="yr">2024→</div><h3>Automation Engineer</h3><div class="org">Aptiva Technologies · Hyderabad</div><p>Delivering enterprise-grade, scalable automations that combine intelligent document processing, AI models and legacy systems, with a focus on reusability, performance and cost and time savings.</p></div>
+    <div class="slab"><span class="pill">Next</span><div class="yr">∞</div><h3>Your process?</h3><div class="org">Let's talk</div><p>If something in your workflow is repetitive, I can probably automate it.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="label">05 / Education</div>
+  <div class="edu">
+    <div class="edu-row reveal"><span class="when">2022 — 2026</span><div><h3>VNR Vignana Jyothi Institute of Engineering and Technology</h3><p>VNRVJIET, Hyderabad</p></div><span class="deg">Bachelor's · Electrical, Electronics &amp; Communications Engg.</span></div>
+    <div class="edu-row reveal"><span class="when">2020 — 2022</span><div><h3>Sri Chaitanya College of Education</h3><p>Intermediate</p></div><span class="deg">12th · MPC</span></div>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <div class="label">06 / Contact</div>
+  <h2>Let's<br><span class="acid">automate</span><br>it.</h2>
+  <div class="hello">
+    <button class="mag" id="helloBtn" aria-expanded="false" aria-controls="helloMenu"><span id="helloLbl">Say hello →</span></button>
+    <div class="hello-menu" id="helloMenu" aria-hidden="true">
+      <a href="https://wa.me/919398758248?text=Hi%20Harshith%2C%20I%20came%20across%20your%20portfolio." target="_blank" rel="noopener" tabindex="-1">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <span class="txt"><b>WhatsApp</b><small>+91 93987 58248</small></span><span class="arr">↗</span>
+      </a>
+      <a href="mailto:ram.h@aptivacorp.ae" tabindex="-1">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <span class="txt"><b>Email</b><small>ram.h@aptivacorp.ae</small></span><span class="arr">↗</span>
+      </a>
+    </div>
+  </div>
+  <div class="links">
+    <a href="mailto:ram.h@aptivacorp.ae">ram.h@aptivacorp.ae</a>
+    <a href="tel:+919000998111">+91 90009 98111</a>
+    <a href="tel:+919398758248">+91 93987 58248</a>
+    <a href="https://www.linkedin.com/in/b-harshith-ram-75832a217" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</section>
+
+</main>
+
+<footer><span>© <span id="yr">2026</span> B Harshith Ram</span><span>Built with bots in Hyderabad</span><a href="#top">Back to top ↑</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+const root = document.documentElement, body = document.body;
+const isTouch = matchMedia('(hover:none)').matches;
+// Fall back to a static page if the animation libraries didn't load (offline, blocked CDN)
+if (!window.gsap || !window.ScrollTrigger) root.classList.add('static');
+const STATIC = root.classList.contains('static');
+if (STATIC) body.classList.remove('loading');
+let lenis = null;
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* clock */
+function tick() {
+  const t = new Date().toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit' });
+  document.getElementById('clock').textContent = 'HYD ' + t;
+}
+tick(); setInterval(tick, 10000);
+
+/* mobile menu */
+const menu = document.getElementById('menu'), menuBtn = document.getElementById('menuBtn');
+function setMenu(open) {
+  menu.classList.toggle('open', open);
+  menu.setAttribute('aria-hidden', !open);
+  menuBtn.setAttribute('aria-expanded', open);
+  if (lenis) open ? lenis.stop() : lenis.start();
+  else body.style.overflow = open ? 'hidden' : '';
+  if (open) menu.querySelector('a').focus();
+}
+menuBtn.addEventListener('click', () => setMenu(true));
+document.getElementById('menuClose').addEventListener('click', () => { setMenu(false); menuBtn.focus(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('open')) setMenu(false); });
+
+/* in-page links (smooth with Lenis when available) */
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const t = document.querySelector(a.getAttribute('href'));
+  if (!t) return;
+  e.preventDefault();
+  if (menu.classList.contains('open')) setMenu(false);
+  if (lenis) lenis.scrollTo(t); else t.scrollIntoView({ behavior: STATIC ? 'auto' : 'smooth' });
+}));
+
+/* tap to decrypt portrait on touch screens */
+const portrait = document.querySelector('.portrait');
+if (isTouch) {
+  document.getElementById('ptag').textContent = 'ID://HARSHITH_RAM — tap to decrypt';
+  portrait.addEventListener('click', () => portrait.classList.toggle('decrypt'));
+}
+
+/* say hello: WhatsApp / email chooser */
+const helloBtn = document.getElementById('helloBtn'), helloMenu = document.getElementById('helloMenu'), helloLbl = document.getElementById('helloLbl');
+const helloItems = [...helloMenu.querySelectorAll('a')];
+function setHello(open) {
+  helloMenu.classList.toggle('open', open);
+  helloMenu.setAttribute('aria-hidden', !open);
+  helloBtn.setAttribute('aria-expanded', open);
+  helloItems.forEach(a => a.tabIndex = open ? 0 : -1);
+  helloLbl.textContent = open ? 'Close ✕' : 'Say hello →';
+  if (open) helloItems[0].focus({ preventScroll: true });
+}
+helloBtn.addEventListener('click', () => setHello(!helloMenu.classList.contains('open')));
+helloItems.forEach(a => a.addEventListener('click', () => setHello(false)));
+document.addEventListener('click', e => { if (!e.target.closest('.hello')) setHello(false); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && helloMenu.classList.contains('open')) { setHello(false); helloBtn.focus(); } });
+
+if (!STATIC) initMotion();
+
+function initMotion() {
+gsap.registerPlugin(ScrollTrigger);
+
+/* smooth scroll */
+if (window.Lenis) {
+  lenis = new Lenis({ lerp: 0.09 });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+  lenis.stop();
+}
+document.fonts && document.fonts.ready.then(() => ScrollTrigger.refresh());
+
+/* scramble */
+const glyphs = '!<>-_\\/[]{}—=+*^?#01';
+function scramble(el) {
+  const final = el.dataset.text; let frame = 0;
+  const id = setInterval(() => {
+    el.textContent = final.split('').map((c, i) => i < frame / 3 ? c : glyphs[Math.floor(Math.random() * glyphs.length)]).join('');
+    if (++frame > final.length * 3) { clearInterval(id); el.textContent = final; }
+  }, 30);
+}
+
+/* loader */
+const msgs = ['Initializing bots…', 'Loading UiPath runtime…', 'Parsing documents…', 'Connecting legacy systems…', 'Ready.'];
+const ld = { v: 0 };
+let seen = false;
+try { seen = sessionStorage.getItem('hr-seen') === '1'; sessionStorage.setItem('hr-seen', '1'); } catch (e) {}
+gsap.to(ld, {
+  v: 100, duration: seen ? .7 : 2.2, ease: 'power2.inOut',
+  onUpdate() {
+    const v = Math.round(ld.v);
+    document.getElementById('ld-n').textContent = String(v).padStart(3, '0');
+    document.getElementById('ld-bar').style.width = v + '%';
+    document.getElementById('ld-msg').textContent = msgs[Math.min(4, Math.floor(v / 22))];
+  },
+  onComplete: intro
+});
+function intro() {
+  const tl = gsap.timeline();
+  tl.to('#loader', { yPercent: -100, duration: 1, ease: 'expo.inOut' })
+    .to('.hero h1 .line > span', { y: 0, duration: 1.1, stagger: .08, ease: 'expo.out' }, '-=.4')
+    .add(() => scramble(document.querySelector('.scramble')), '-=.9')
+    .to('.portrait', { clipPath: 'inset(0% 0 0 0)', duration: 1.3, ease: 'expo.inOut' }, '-=1.1')
+    .to('.portrait img', { scale: 1, duration: 1.6, ease: 'expo.out' }, '-=1')
+    .from('.hero-meta, .hero .sub', { opacity: 0, y: 20, stagger: .1, duration: .8 }, '-=1.2')
+    .add(unlock);
+}
+function unlock() { body.classList.remove('loading'); if (lenis) lenis.start(); }
+// Never trap the visitor behind the loader if something stalls
+setTimeout(() => { if (body.classList.contains('loading')) { gsap.set('#loader', { yPercent: -100 }); gsap.set('.hero h1 .line > span', { y: 0 }); gsap.set('.portrait', { clipPath: 'inset(0% 0 0 0)' }); unlock(); } }, 8000);
+
+/* cursor */
+if (!isTouch) {
+  const c = document.querySelector('.cursor'), d = document.querySelector('.cursor-dot');
+  const xc = gsap.quickTo(c, 'x', { duration: .45, ease: 'power3' }), yc = gsap.quickTo(c, 'y', { duration: .45, ease: 'power3' });
+  addEventListener('mousemove', e => { xc(e.clientX); yc(e.clientY); gsap.set(d, { x: e.clientX, y: e.clientY }); });
+  document.querySelectorAll('a, .node, .cap, .portrait').forEach(el => {
+    el.addEventListener('mouseenter', () => c.classList.add('hover'));
+    el.addEventListener('mouseleave', () => c.classList.remove('hover'));
+  });
+}
+
+/* magnetic button */
+const mag = document.querySelector('.mag');
+mag.addEventListener('mousemove', e => {
+  const r = mag.getBoundingClientRect();
+  gsap.to(mag, { x: (e.clientX - r.left - r.width / 2) * .4, y: (e.clientY - r.top - r.height / 2) * .4, duration: .3 });
+});
+mag.addEventListener('mouseleave', () => gsap.to(mag, { x: 0, y: 0, duration: .6, ease: 'elastic.out(1,.4)' }));
+
+/* spotlight on capability cards */
+document.querySelectorAll('.cap').forEach(el => el.addEventListener('mousemove', e => {
+  const r = el.getBoundingClientRect();
+  el.style.setProperty('--x', (e.clientX - r.left) + 'px'); el.style.setProperty('--y', (e.clientY - r.top) + 'px');
+}));
+
+/* about word reveal */
+const about = document.getElementById('aboutText');
+about.innerHTML = about.innerHTML.replace(/(<em>.*?<\/em>|[^\s<]+)/g, m => `<span class="w">${m}</span>`);
+gsap.to('#aboutText .w', { opacity: 1, stagger: .05, ease: 'none', scrollTrigger: { trigger: about, start: 'top 80%', end: 'bottom 45%', scrub: true } });
+
+/* counters */
+document.querySelectorAll('.count').forEach(el => {
+  const o = { v: 0 };
+  gsap.to(o, { v: +el.dataset.to, duration: 1.6, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%' }, onUpdate: () => el.textContent = Math.round(o.v) });
+});
+
+/* pipeline run */
+const nodes = [...document.querySelectorAll('.node')];
+gsap.from(nodes, { y: 60, opacity: 0, stagger: .1, duration: .9, ease: 'expo.out', scrollTrigger: { trigger: '#pipeline', start: 'top 80%' } });
+ScrollTrigger.create({
+  trigger: '#pipeline', start: 'top 60%', once: true,
+  onEnter() {
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+    nodes.forEach((n, i) => {
+      tl.to('#pipeFill', { attr: { x2: 20 + i * 240 }, duration: .5, ease: 'power1.inOut' })
+        .add(() => n.classList.add('active'));
+      tl.to({}, { duration: .35 });
+    });
+    tl.to({}, { duration: 1.2 }).add(() => nodes.forEach(n => n.classList.remove('active'))).set('#pipeFill', { attr: { x2: 20 } });
+  }
+});
+
+gsap.from('.cap', { y: 40, opacity: 0, stagger: .08, duration: .8, ease: 'expo.out', scrollTrigger: { trigger: '#caps', start: 'top 80%' } });
+gsap.utils.toArray('.reveal').forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%' } }));
+
+/* horizontal timeline */
+const track = document.getElementById('hzTrack');
+gsap.to(track, {
+  x: () => -(track.scrollWidth - innerWidth + 48),
+  ease: 'none',
+  scrollTrigger: { trigger: '#work', start: 'top top', end: () => '+=' + track.scrollWidth, pin: true, scrub: 1, invalidateOnRefresh: true }
+});
+
+gsap.from('.contact h2', { yPercent: 30, opacity: 0, duration: 1.2, ease: 'expo.out', scrollTrigger: { trigger: '.contact', start: 'top 70%' } });
+
+/* ---------- WebGL particle core ---------- */
+(function () {
+  if (!window.THREE) return;
+  const canvas = document.getElementById('gl');
+  let renderer;
+  try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); } catch (e) { return; }
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(55, 1, .1, 100); cam.position.z = 6;
+
+  const N = innerWidth < 700 ? 5000 : 12000;
+  const pos = new Float32Array(N * 3), rnd = new Float32Array(N);
+  for (let i = 0; i < N; i++) {
+    const u = Math.random() * 2 - 1, th = Math.random() * Math.PI * 2, r = Math.sqrt(1 - u * u);
+    pos.set([r * Math.cos(th), r * Math.sin(th), u], i * 3); rnd[i] = Math.random();
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geo.setAttribute('aRnd', new THREE.BufferAttribute(rnd, 1));
+
+  const mat = new THREE.ShaderMaterial({
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    uniforms: { uT: { value: 0 }, uMouse: { value: new THREE.Vector2() }, uScroll: { value: 0 }, uPx: { value: renderer.getPixelRatio() } },
+    vertexShader: `
+      uniform float uT, uScroll, uPx; uniform vec2 uMouse; attribute float aRnd; varying float vA;
+      vec3 hash(vec3 p){ p=vec3(dot(p,vec3(127.1,311.7,74.7)),dot(p,vec3(269.5,183.3,246.1)),dot(p,vec3(113.5,271.9,124.6))); return -1.+2.*fract(sin(p)*43758.5453); }
+      float noise(vec3 p){ vec3 i=floor(p),f=fract(p),u=f*f*(3.-2.*f);
+        return mix(mix(mix(dot(hash(i),f),dot(hash(i+vec3(1,0,0)),f-vec3(1,0,0)),u.x),mix(dot(hash(i+vec3(0,1,0)),f-vec3(0,1,0)),dot(hash(i+vec3(1,1,0)),f-vec3(1,1,0)),u.x),u.y),
+                   mix(mix(dot(hash(i+vec3(0,0,1)),f-vec3(0,0,1)),dot(hash(i+vec3(1,0,1)),f-vec3(1,0,1)),u.x),mix(dot(hash(i+vec3(0,1,1)),f-vec3(0,1,1)),dot(hash(i+vec3(1,1,1)),f-vec3(1,1,1)),u.x),u.y),u.z); }
+      void main(){
+        vec3 p = position;
+        float n = noise(p*1.6 + uT*.25);
+        float amp = .35 + length(uMouse)*.35 + uScroll*1.4;
+        p *= 2.0 + n*amp + aRnd*uScroll*2.5;
+        vec4 mv = modelViewMatrix*vec4(p,1.);
+        gl_Position = projectionMatrix*mv;
+        gl_PointSize = (1.2 + aRnd*2.2) * uPx * (6./-mv.z);
+        vA = .35 + n*.9;
+      }`,
+    fragmentShader: `
+      varying float vA;
+      void main(){ float d=length(gl_PointCoord-.5); if(d>.5) discard;
+        gl_FragColor = vec4(mix(vec3(.78,1.,.24), vec3(1.), .15), (1.-d*2.)*vA*.85); }`
+  });
+  const pts = new THREE.Points(geo, mat); scene.add(pts);
+
+  function size() {
+    renderer.setSize(innerWidth, innerHeight, false);
+    cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix();
+    pts.position.x = innerWidth > 900 ? 1.2 : 0;
+  }
+  size(); addEventListener('resize', size);
+
+  const m = new THREE.Vector2(), mt = new THREE.Vector2();
+  addEventListener('pointermove', e => mt.set(e.clientX / innerWidth * 2 - 1, -(e.clientY / innerHeight * 2 - 1)));
+  let sc = 0;
+  ScrollTrigger.create({ start: 0, end: 'max', onUpdate: s => sc = s.progress });
+
+  const clock = new THREE.Clock();
+  (function loop() {
+    const t = clock.getElapsedTime();
+    m.lerp(mt, .05);
+    mat.uniforms.uT.value = t; mat.uniforms.uMouse.value.copy(m);
+    mat.uniforms.uScroll.value += (Math.min(sc * 3, 1) - mat.uniforms.uScroll.value) * .05;
+    pts.rotation.y = t * .08 + m.x * .5; pts.rotation.x = m.y * .3 + sc * 2;
+    canvas.style.opacity = 1 - Math.min(sc * 4, .75);
+    renderer.render(scene, cam);
+    requestAnimationFrame(loop);
+  })();
+})();
+}
+</script>
+</body>
+</html>
